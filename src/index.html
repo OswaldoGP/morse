@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Traductor Morse</title>
+</head>
+<body>
+  <main class="contenedor">
+    <h1>Traductor Morse</h1>
+    <p class="subtitulo">Convierte texto a código Morse y viceversa.</p>
+
+    <section class="tarjeta">
+      <label for="modo">Tipo de conversión</label>
+      <select id="modo">
+        <option value="texto-morse">Texto → Morse</option>
+        <option value="morse-texto">Morse → Texto</option>
+      </select>
+
+      <label for="entrada">Entrada</label>
+      <textarea id="entrada" rows="4" placeholder="Escribe aquí tu texto"></textarea>
+
+      <div class="botones">
+        <button id="btnConvertir" class="btn btn-principal">Convertir</button>
+        <button id="btnLimpiar" class="btn btn-secundario">Limpiar</button>
+      </div>
+
+      <div id="alerta" class="alerta oculto"></div>
+
+      <label>Resultado</label>
+      <div id="salida" class="salida"></div>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Tabla de equivalencias</h2>
+      <div id="tabla" class="tabla"></div>
+      <p class="nota">Letras separadas por un espacio y palabras por " / ".</p>
+    </section>
+  </main>
+</body>
+</html>
